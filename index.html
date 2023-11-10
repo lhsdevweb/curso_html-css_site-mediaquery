@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="layout/mobile.css">
+    <link rel="stylesheet" href="layout/outros.css">
+</head>
+<body onresize="mudaTamanho()">
+    <section>
+        <header>
+            <h1>Website Mobile First & Responsivo</h1>
+            <h2>- mais uma versão p/impressão e arquivo(*.pdf) -</h2>
+            <a href="mobile2/index.html">Trocar wallpaper</a>
+        </header>
+        <span id="IconeMenu" class="material-icons" onclick="clicaMenu()">menu</span>
+        <menu id="ItensMenu">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </menu>        
+        <main>
+            <img id="cel" src="imagens/icon-phone.png" alt="celular">
+            <img id="tab" src="imagens/icon-tablet.png" alt="tablet">
+            <img id="note" src="imagens/icon-note.png" alt="computador">
+            <img id="tv" src="imagens/icon-tv.png" alt="tv">
+            <img id="imp" src="imagens/icon-print.png" alt="impressora">
+    
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, voluptates sed? Vel aliquid asperiores nam? Distinctio similique quasi omnis illum aperiam at expedita cupiditate ipsum ad, ut eveniet maxime enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nulla numquam voluptas! Voluptas et dignissimos ab expedita id suscipit saepe officiis nostrum, quidem labore modi, debitis perferendis, sunt adipisci tempore.</p>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, voluptates sed? Vel aliquid asperiores nam? Distinctio similique quasi omnis illum aperiam at expedita cupiditate ipsum ad, ut eveniet maxime enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nulla numquam voluptas! Voluptas et dignissimos ab expedita id suscipit saepe officiis nostrum, quidem labore modi, debitis perferendis, sunt adipisci tempore.</p>
+            </article>
+        </main>
+        <script>
+            function clicaMenu() {
+                if (ItensMenu.style.display == 'block') 
+                    {ItensMenu.style.display = 'none'}
+                else
+                    {ItensMenu.style.display = 'block'}
+            }
+            function mudaTamanho() {
+                if (window.innerWidth >= 600)
+                    {ItensMenu.style.display = 'block'}
+                else
+                    {ItensMenu.style.display = 'none'}
+            }
+        </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+
+html, body {background-color: blue; background-size: contain; background-repeat: no-repeat;
+            width: 100vw; height: 99vh; background-position: center bottom;}
+/*
+    'background-size: contain' coloca a imagem inteira na tela/janela, porém com sobras de espaços de acordo com o tamanho da tela/janela
+    'background-size: cover' preenche toda a janela com a imagem, porém podendo ter a imagem cortada de acordo com o tamanho da tela/janela
+    Obs.:
+        Uma forma interessante de resolver essa questão de ter uma imagem inteira na tela sem ter sobras de espaço aparente, é usar o 'background-size: contain' e o 'background-color' da mesma cor do fundo da imagem, como aplicado neste exercício
+*/
+h1 {font-family: Arial, Helvetica, sans-serif; font-size: 1.5em; color: white; 
+    text-align: center; padding-top: 10px;}
+
+a {text-align: center; color: white; display: block; margin-top: 5px;}
