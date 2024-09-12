@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*
 - Typical Device Breakpoints -
 Celular (telas menores): até 600px
@@ -19,9 +18,12 @@ Tv/Monitor (telas maiores): acima de 1200px
     header a {display: none;} #ItensMenu a {display: none;}
 }
 
+@media (max-width: 400px) { body {background-size: auto; padding-bottom: 20px;} }
+
 @media screen and (min-width: 600px) {
     #IconeMenu {display: none;} #ItensMenu {display: block; text-align: center;}
-    #ItensMenu li {display: inline-block; width: 100px;}} 
+    #ItensMenu li {display: inline-block; width: 100px;}
+} 
 
 @media screen and (min-width: 600px) and (max-width: 920px) {
     body {background-size: auto; padding-bottom: 20px;} 
