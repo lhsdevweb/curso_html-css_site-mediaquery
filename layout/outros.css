@@ -19,8 +19,9 @@ Tv/Monitor (telas maiores): acima de 1200px
 }
 
 @media (max-width: 590px) { 
-   body {background-size: auto; padding-bottom: 20px;} 
    html {background-color: red}
+   body {background-size: auto; padding-bottom: 20px;} 
+   p {color: red}
 }
 
 @media screen and (min-width: 600px) {
