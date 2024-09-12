@@ -23,6 +23,15 @@ Tv/Monitor (telas maiores): acima de 1200px
     #IconeMenu {display: none;} #ItensMenu {display: block; text-align: center;}
     #ItensMenu li {display: inline-block; width: 100px;}} 
 
+@media screen and (min-width: 600px) and (max-width: 920px) {
+    body {background-size: auto; padding-bottom: 20px;} 
+    /* 
+        Breakpoint adicional p/tablet:
+        para que a imagem de fundo ocupe toda a página, sem deixar espaços em branco,
+        como estava acontecendo antes sem esse breakpoint, ao redimensionar a página.
+        os demais breakpoints herdam o 'background-size: cover' do 'mobile.css'
+    */
+}
 @media screen and (min-width: 600px) and (max-width: 992px){
     body {background-image: url(../imagens/back-tablet.jpg);}
     h1 {font-size: 1.5em;} h2 {font-size: 1em;} p {font-size: 1em;}
