@@ -18,7 +18,7 @@ Tv/Monitor (telas maiores): acima de 1200px
     header a {display: none;} #ItensMenu a {display: none;}
 }
 
-@media (max-width: 590px) { 
+@media (max-width: 550px) { 
    body {background-size: auto; padding-bottom: 20px;} 
    p {color: red}
 }
