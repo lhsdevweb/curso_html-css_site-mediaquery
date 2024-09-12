@@ -18,9 +18,11 @@ Tv/Monitor (telas maiores): acima de 1200px
     header a {display: none;} #ItensMenu a {display: none;}
 }
 
-@media (max-width: 520px) { 
-   body {background-size: auto; padding-bottom: 20px;} 
-   p {color: red}
+@media (max-width: 599px) { 
+    body {background-size: auto; padding-bottom: 20px;} 
+    /*
+        pra não deixar espaços em branco p/celular 
+    */
 }
 
 @media screen and (min-width: 600px) {
@@ -28,19 +30,24 @@ Tv/Monitor (telas maiores): acima de 1200px
     #ItensMenu li {display: inline-block; width: 100px;}
 } 
 
-@media screen and (min-width: 600px) and (max-width: 920px) {
-    body {background-size: auto; padding-bottom: 20px;} 
-    /* 
-        Breakpoint adicional p/tablet:
-        para que a imagem de fundo ocupe toda a página, sem deixar espaços em branco,
-        como estava acontecendo antes sem esse breakpoint, ao redimensionar a página.
-        os demais breakpoints herdam o 'background-size: cover' do 'mobile.css'
-    */
-}
-@media screen and (min-width: 600px) and (max-width: 992px){
-    body {background-image: url(../imagens/back-tablet.jpg);}
+/* Breakpoint p/tablet - parte 1 */
+@media (min-width: 600px) and (max-width: 992px) {
+    body {background-image: url(../imagens/back-tablet.jpg); padding-bottom: 20px;}
     h1 {font-size: 1.5em;} h2 {font-size: 1em;} p {font-size: 1em;}
     #cel {display: none;} #tab {display: block;} header a {display: block;}
+}
+/* 
+    para que a imagem de fundo ocupe toda a página, sem deixar espaços em branco,
+    como estava acontecendo antes sem esses breakpoints, ao redimensionar a página.
+    os demais breakpoints herdam o 'background-size: cover' do 'mobile.css'
+*/
+/* Breakpoint p/tablet - parte 2 */
+@media (min-width: 600px) and (max-width: 650px) {
+    body {background-size: 240%;}
+}
+/* Breakpoint p/tablet - parte 3 */
+@media screen and (min-width: 651px) and (max-width: 992px){
+    body {background-size: auto;}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
