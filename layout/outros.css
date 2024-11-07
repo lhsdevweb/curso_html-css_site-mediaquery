@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*
+    - Typical Device Breakpoints -
+    Celular (telas menores): até 600px
+    Celular (telas maiores): de 600px até 768px
+    Tablet: de 768px até 992px
+    Laptop: de 992px até 1200px
+    Tv/Monitor (telas maiores): acima de 1200px 
+*/
+@media print {
+    * {font-family: 'Courier New', Courier, monospace;}
+    body {background-color: rgba(128, 128, 128, 0.329);}
+    h1 {font-size: 1.5em; color: black; font-weight: bold;}
+    h2 {font-size: 1em;}
+    main::after {content: 'Desafio 17: Curso em Vídeo - Módulo 4 - Capítulo 25';
+                    text-decoration: overline;}
+    #cel {display: none;} #imp {display: block;} 
+    header a {display: none;} #ItensMenu a {display: none;}
+}
+
+@media (min-width: 600px) {
+    #IconeMenu {display: none;} 
+    #ItensMenu {display: block; text-align: center;}
+    #ItensMenu li {display: inline-block; width: 100px;}
+} 
+
+@media screen and (min-width: 1201px){
+    body {background-image: url(../imagens/back-tv.jpg);}
+    h1 {font-size: 2.5em;} h2 {font-size: 1.5em;} p {font-size: 1em;}
+    #cel {display: none;} #tv {display: block;} header a {display: none;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    body {background-image: url(../imagens/back-pc.jpg);}
+    h1 {font-size: 2em;} h2 {font-size: 1.2em;} p {font-size: 1em;}
+    #cel {display: none;} #note {display: block;} header a {display: none;}
+}
+
+/* Breakpoint p/tablet - parte 1 */
+@media (min-width: 600px) and (max-width: 992px) {
+    body {background-image: url(../imagens/back-tablet.jpg);}
+    h1 {font-size: 1.5em;} h2 {font-size: 1em;} p {font-size: 1em;}
+    #cel {display: none;} #tab {display: block;} header a {display: block;}
+}
+/* 
+Breakpoint p/tablet - parte 2 
+esse 'background-size' é p/telas no devtools
+ao redimensionar a janela não funciona
+então, escolhi deixar o 'background-size: auto' do 'mobile.css'
+@media (min-width: 641px) and (max-width: 992px) {
+    body {background-size: cover;}
+}
+*/
+
+/* Breakpoint p/tablet - parte 2 */
+@media (min-width: 600px) and (max-width: 640px) {
+    body {background-size: 235%;}
+}
+
+
